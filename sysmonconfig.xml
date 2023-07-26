@@ -1,0 +1,222 @@
+<Sysmon schemaversion="2.01">
+  <HashAlgorithms>*</HashAlgorithms>
+  <EventFiltering>
+    <ProcessCreate onmatch="exclude">
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\UWA\updaterstartuputility.exe</Image>
+      <Image>C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</Image>
+      <Image condition="end with">C:\Windows\SysWOW64\Macromed\Flash\FlashPlayerUpdateService.exe</Image>
+      <Image>C:\Program Files (x86)\Microsoft Office\Office16\MSOSYNC.EXE</Image>
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient\AdobeGCClient.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\LogTransport2.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\P7\adobe_licutil.exe</Image>
+      <Image>C:\Windows\System32\wermgr.exe</Image>
+      <Image>C:\Windows\System32\powercfg.exe</Image>
+      <Image>C:\Windows\System32\MusNotification.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Dropbox\Update\DropboxUpdate.exe</Image>
+      <Image>C:\Windows\system32\sppsvc.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\AcroCEF\AcroCEF.exe</Image>
+      <Image condition="begin with">C:\Program Files (x86)\Google\Update\</Image>
+      <Image>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorsvw.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\armsvc.exe</Image>
+      <Image>C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe</Image>
+      <Image condition="begin with">C:\Program Files\Realtek\</Image>
+      <Image>C:\Windows\System32\wbem\WmiApSrv.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroCEF\RdrCEF.exe</Image>
+      <Image>C:\Windows\Microsoft.Net\Framework64\v3.0\WPF\PresentationFontCache.exe</Image>
+      <Image>C:\Windows\System32\conhost.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\P6\adobe_licutil.exe</Image>
+      <Image>C:\Windows\SysWOW64\wermgr.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\AdobeCollabSync.exe</Image>
+      <Image condition="begin with">C:\Program Files\NVIDIA Corporation\</Image>
+      <Image condition="end with">C:\Program Files (x86)\Adobe\Adobe Creative Cloud\ACC\Creative Cloud.exe</Image>
+      <Image>C:\Windows\System32\audiodg.exe</Image>
+      <Image condition="end with">C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\HEX\Adobe CEF Helper.exe</Image>
+      <Image>C:\Program Files\Common Files\Microsoft Shared\OfficeSoftwareProtectionPlatform\OSPPSVC.EXE</Image>
+      <Image>C:\Windows\System32\MusNotificationUx.exe</Image>
+      <Image condition="end with">C:\Windows\System32\CompatTelRunner.exe</Image>
+      <CommandLine>C:\Windows\System32\svchost.exe -k wsappx</CommandLine>
+      <CommandLine condition="begin with">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=</CommandLine>
+      <CommandLine condition="begin with">C:\Windows\system32\DllHost.exe /Processid</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k localSystemNetworkRestricted</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k netsvcs</CommandLine>
+      <CommandLine condition="contains">AcroRd32.exe" /CR </CommandLine>
+      <CommandLine condition="begin with">"C:\Program Files\Mozilla Firefox\plugin-container.exe" --channel</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k utcsvc</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k localServiceAndNoImpersonation</CommandLine>
+      <CommandLine>C:\Windows\system32\svchost.exe -k networkService</CommandLine>
+      <CommandLine>C:\Windows\system32\SearchIndexer.exe /Embedding</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k imgsvc</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k wbioSvcGroup</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k dcomLaunch</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k networkServiceNetworkRestricted</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k localServiceNetworkRestricted</CommandLine>
+      <CommandLine>C:\windows\System32\svchost.exe -k werSvcGroup</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k defragsvc</CommandLine>
+      <CommandLine condition="contains">AcroRd32.exe" --channel=</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k rPCSS</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k appmodel</CommandLine>
+      <CommandLine condition="begin with">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --type=</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k unistackSvcGroup</CommandLine>
+      <CommandLine condition="begin with">C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe</CommandLine>
+      <CommandLine>C:\Windows\System32\svchost.exe -k swprv</CommandLine>
+      <CommandLine condition="begin with">"C:\Program Files (x86)\Mozilla Firefox\plugin-container.exe" --channel</CommandLine>
+      <IntegrityLevel>AppContainer</IntegrityLevel>
+      <ParentImage>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorsvw.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Adobe\Adobe Creative Cloud\CCXProcess\CCXProcess.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\P7\adobe_licutil.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Adobe\Adobe Creative Cloud\CoreSync\CoreSync.exe</ParentImage>
+      <ParentImage>C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Common Files\Adobe\AdobeGCClient\AGSService.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files\Realtek\Audio\HDA\RtkAudioService64.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Dropbox\Update\DropboxUpdate.exe</ParentImage>
+      <ParentImage>C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files (x86)\Adobe\Adobe Creative Cloud\ACC\Creative Cloud.exe</ParentImage>
+      <ParentImage>C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\UWA\updaterstartuputility.exe</ParentImage>
+      <ParentImage>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngentask.exe</ParentImage>
+      <ParentImage>C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngentask.exe</ParentImage>
+      <ParentImage condition="end with">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe</ParentImage>
+      <ParentImage>C:\Windows\system32\SearchIndexer.exe</ParentImage>
+      <ParentImage condition="begin with">C:\Program Files (x86)\Google\Update\</ParentImage>
+      <ParentCommandLine>C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted</ParentCommandLine>
+      <ParentCommandLine condition="begin with">%%SystemRoot%%\system32\csrss.exe ObjectDirectory=\Windows</ParentCommandLine>
+      <ParentCommandLine condition="contains">C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngentask.exe</ParentCommandLine>
+      <ParentCommandLine>C:\Windows\System32\svchost.exe -k netsvcs</ParentCommandLine>
+    </ProcessCreate>
+    <NetworkConnect onmatch="include">
+      <Image condition="image">omniinet.exe</Image>
+      <Image condition="image">vncservice.exe</Image>
+      <Image condition="image">cmd.exe</Image>
+      <Image condition="image">psexec.exe</Image>
+      <Image condition="image">vnc.exe</Image>
+      <Image condition="image">wscript.exe</Image>
+      <Image condition="begin with">C:\Windows\Temp</Image>
+      <Image condition="image">regsvr32.exe</Image>
+      <Image condition="image">net.exe</Image>
+      <Image condition="image">msiexec.exe</Image>
+      <Image condition="image">winexesvc.exe</Image>
+      <Image condition="image">wmic.exe</Image>
+      <Image condition="image">at.exe</Image>
+      <Image condition="begin with">C:\Temp</Image>
+      <Image condition="image">powershell.exe</Image>
+      <Image condition="begin with">C:\ProgramData</Image>
+      <Image condition="image">cscript.exe</Image>
+      <Image condition="image">reg.exe</Image>
+      <Image condition="image">notepad.exe</Image>
+      <Image condition="image">psexesvc.exe</Image>
+      <Image condition="image">tor.exe</Image>
+      <Image condition="image">certutil.exe</Image>
+      <Image condition="image">hpsmhd.exe</Image>
+      <Image condition="image">\AA_v</Image>
+      <Image condition="image">mshta.exe</Image>
+      <Image condition="begin with">C:\Users</Image>
+      <Image condition="image">rundll32.exe</Image>
+      <Image condition="image">qwinsta.exe</Image>
+      <Image condition="image">sc.exe</Image>
+      <Image condition="image">vncviewer.exe</Image>
+      <Image condition="image">java.exe</Image>
+      <DestinationPort>1723</DestinationPort>
+      <DestinationPort>8080</DestinationPort>
+      <DestinationPort>23</DestinationPort>
+      <DestinationPort>9001</DestinationPort>
+      <DestinationPort>22</DestinationPort>
+      <DestinationPort>5900</DestinationPort>
+      <DestinationPort>3128</DestinationPort>
+      <DestinationPort>3389</DestinationPort>
+      <DestinationPort>9030</DestinationPort>
+      <DestinationPort>25</DestinationPort>
+      <DestinationPort>4500</DestinationPort>
+      <DestinationPort>1080</DestinationPort>
+      <DestinationPort>5800</DestinationPort>
+    </NetworkConnect>
+    <NetworkConnect onmatch="exclude">
+      <Image condition="image">OneDriveStandaloneUpdater.exe</Image>
+      <Image condition="image">Spotify.exe</Image>
+      <Image condition="end with">AppData\Roaming\Dropbox\bin\Dropbox.exe</Image>
+      <Image condition="image">OneDrive.exe</Image>
+      <DestinationHostname condition="end with">microsoft.com.nsatc.net</DestinationHostname>
+      <DestinationHostname condition="end with">microsoft.com.akadns.net</DestinationHostname>
+      <DestinationHostname condition="end with">microsoft.com</DestinationHostname>
+    </NetworkConnect>
+    <ProcessTerminate onmatch="include">
+      <Image condition="begin with">C:\Users</Image>
+      <Image condition="begin with">C:\Temp</Image>
+      <Image condition="begin with">C:\Windws\Temp</Image>
+    </ProcessTerminate>
+    <DriverLoad onmatch="include" />
+    <DriverLoad onmatch="exclude">
+      <Signature condition="begin with">Intel </Signature>
+      <Signature condition="contains">microsoft</Signature>
+      <Signature condition="contains">windows</Signature>
+    </DriverLoad>
+    <ImageLoad onmatch="include">
+      <ImageLoaded>C:\Windows\System32\WinSCard.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\vaultcli.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\samlib.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\cryptdll.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\hid.dll</ImageLoaded>
+    </ImageLoad>
+    <CreateRemoteThread onmatch="include">
+      <StartFunction condition="contains">LoadLibrary</StartFunction>
+    </CreateRemoteThread>
+    <CreateRemoteThread onmatch="exclude">
+      <SourceImage>C:\Windows\System32\wbem\WmiPrvSE.exe</SourceImage>
+      <SourceImage>C:\Windows\System32\svchost.exe</SourceImage>
+      <SourceImage>C:\Windows\System32\services.exe</SourceImage>
+      <SourceImage>C:\Windows\System32\audiodg.exe</SourceImage>
+      <SourceImage>C:\Windows\System32\csrss.exe</SourceImage>
+      <SourceImage>C:\Windows\System32\winlogon.exe</SourceImage>
+      <SourceImage>C:\Windows\System32\wininit.exe</SourceImage>
+      <TargetImage condition="end with">Google\Chrome\Application\chrome.exe</TargetImage>
+      <StartModule>C:\windows\system32\kernel32.dll</StartModule>
+    </CreateRemoteThread>
+    <RawAccessRead onmatch="include" />
+        <ProcessCreate onmatch="include">
+      <Image condition="end with">hh.exe</Image>
+      <Image condition="end with">ipconfig.exe</Image>
+      <Image condition="end with">tree.com</Image>
+      <Image condition="end with">netstat.exe</Image>
+      <Image condition="end with">winrm.cmd</Image>
+      <Image condition="end with">sdbinst.exe</Image>
+      <Image condition="end with">wevutil.exe</Image>
+      <Image condition="end with">bash.exe</Image>
+      <Image condition="end with">runas.exe</Image>
+      <Image condition="end with">klist.exe</Image>
+      <Image condition="end with">taskkill.exe</Image>
+      <Image condition="end with">MSBuild.exe</Image>
+      <Image condition="end with">netsh.exe</Image>
+      <Image condition="end with">quser.exe</Image>
+      <Image condition="end with">regsvcs.exe</Image>
+      <Image condition="end with">wevtutil.exe</Image>
+      <Image condition="end with">reg.exe</Image>
+      <Image condition="end with">odbcconf.exe</Image>
+      <Image condition="end with">query.exe</Image>
+      <Image condition="end with">nslookup.exe</Image>
+      <Image condition="end with">regsvr32.exe</Image>
+      <Image condition="end with">InstallUtil.exe</Image>
+      <Image condition="end with">bitsadmin.exe</Image>
+      <Image condition="end with">route.exe</Image>
+      <Image condition="end with">sysinfo.exe</Image>
+      <Image condition="end with">tracert.exe</Image>
+      <Image condition="end with">qprocess.exe</Image>
+      <Image condition="end with">whoami.exe</Image>
+      <Image condition="end with">tasklist.exe</Image>
+      <Image condition="end with">wsmprovhost.exe</Image>
+      <Image condition="end with">regasm.exe</Image>
+      <CommandLine condition="contains">wevtutil cl</CommandLine>
+      <CommandLine condition="contains">wevutil cl</CommandLine>
+      <CommandLine condition="contains">/logfile= /LogToConsole=false /U</CommandLine>
+      <ParentImage condition="end with">fodhelper.exe</ParentImage>
+      <ParentImage condition="end with">wmiprvse.exe</ParentImage>
+      <ParentImage condition="end with">DisplaySwitch.exe</ParentImage>
+      <ParentImage condition="end with">eventvwr.exe</ParentImage>
+      <ParentImage condition="end with">sethc.exe</ParentImage>
+      <ParentImage condition="end with">AtBroker.exe</ParentImage>
+      <ParentImage condition="end with">Magnify.exe</ParentImage>
+      <ParentImage condition="end with">osk.exe</ParentImage>
+      <ParentImage condition="end with">utilman.exe</ParentImage>
+      <ParentImage condition="end with">Narrator.exe</ParentImage>
+    </ProcessCreate>
+  </EventFiltering>
+</Sysmon>
