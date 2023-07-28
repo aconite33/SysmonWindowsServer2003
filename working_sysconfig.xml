@@ -1,0 +1,117 @@
+<Sysmon schemaversion="2.01">
+  <HashAlgorithms>*</HashAlgorithms>
+  <EventFiltering>
+    <ProcessCreate onmatch="include">
+      <Image condition="end with">hh.exe</Image>
+      <Image condition="end with">ipconfig.exe</Image>
+      <Image condition="end with">tree.com</Image>
+      <Image condition="end with">netstat.exe</Image>
+      <Image condition="end with">winrm.cmd</Image>
+      <Image condition="end with">sdbinst.exe</Image>
+      <Image condition="end with">wevutil.exe</Image>
+      <Image condition="end with">bash.exe</Image>
+      <Image condition="end with">runas.exe</Image>
+      <Image condition="end with">klist.exe</Image>
+      <Image condition="end with">taskkill.exe</Image>
+      <Image condition="end with">MSBuild.exe</Image>
+      <Image condition="end with">netsh.exe</Image>
+      <Image condition="end with">quser.exe</Image>
+      <Image condition="end with">regsvcs.exe</Image>
+      <Image condition="end with">wevtutil.exe</Image>
+      <Image condition="end with">reg.exe</Image>
+      <Image condition="end with">odbcconf.exe</Image>
+      <Image condition="end with">query.exe</Image>
+      <Image condition="end with">nslookup.exe</Image>
+      <Image condition="end with">regsvr32.exe</Image>
+      <Image condition="end with">InstallUtil.exe</Image>
+      <Image condition="end with">bitsadmin.exe</Image>
+      <Image condition="end with">route.exe</Image>
+      <Image condition="end with">sysinfo.exe</Image>
+      <Image condition="end with">tracert.exe</Image>
+      <Image condition="end with">qprocess.exe</Image>
+      <Image condition="end with">whoami.exe</Image>
+      <Image condition="end with">tasklist.exe</Image>
+      <Image condition="end with">wsmprovhost.exe</Image>
+      <Image condition="end with">regasm.exe</Image>
+      <Image condition="end with">vbs.exe</Image>
+      <Image condition="end with">wscript.exe</Image>
+      <Image condition="end with">cscript.exe</Image>
+      <Image condition="end with">powershell.exe.exe</Image>
+      <CommandLine condition="contains">wevtutil cl</CommandLine>
+      <CommandLine condition="contains">wevutil cl</CommandLine>
+      <CommandLine condition="contains">/logfile= /LogToConsole=false /U</CommandLine>
+      <ParentImage condition="end with">fodhelper.exe</ParentImage>
+      <ParentImage condition="end with">wmiprvse.exe</ParentImage>
+      <ParentImage condition="end with">DisplaySwitch.exe</ParentImage>
+      <ParentImage condition="end with">eventvwr.exe</ParentImage>
+      <ParentImage condition="end with">sethc.exe</ParentImage>
+      <ParentImage condition="end with">AtBroker.exe</ParentImage>
+      <ParentImage condition="end with">Magnify.exe</ParentImage>
+      <ParentImage condition="end with">osk.exe</ParentImage>
+      <ParentImage condition="end with">utilman.exe</ParentImage>
+      <ParentImage condition="end with">Narrator.exe</ParentImage>
+    </ProcessCreate>
+    <NetworkConnect onmatch="include">
+      <Image condition="image">omniinet.exe</Image>
+      <Image condition="image">vncservice.exe</Image>
+      <Image condition="image">cmd.exe</Image>
+      <Image condition="image">psexec.exe</Image>
+      <Image condition="image">vnc.exe</Image>
+      <Image condition="image">wscript.exe</Image>
+      <Image condition="begin with">C:\Windows\Temp</Image>
+      <Image condition="image">regsvr32.exe</Image>
+      <Image condition="image">net.exe</Image>
+      <Image condition="image">msiexec.exe</Image>
+      <Image condition="image">winexesvc.exe</Image>
+      <Image condition="image">wmic.exe</Image>
+      <Image condition="image">at.exe</Image>
+      <Image condition="begin with">C:\Temp</Image>
+      <Image condition="image">powershell.exe</Image>
+      <Image condition="begin with">C:\ProgramData</Image>
+      <Image condition="image">cscript.exe</Image>
+      <Image condition="image">reg.exe</Image>
+      <Image condition="image">notepad.exe</Image>
+      <Image condition="image">psexesvc.exe</Image>
+      <Image condition="image">tor.exe</Image>
+      <Image condition="image">certutil.exe</Image>
+      <Image condition="image">hpsmhd.exe</Image>
+      <Image condition="image">\AA_v</Image>
+      <Image condition="image">mshta.exe</Image>
+      <Image condition="begin with">C:\Users</Image>
+      <Image condition="image">rundll32.exe</Image>
+      <Image condition="image">qwinsta.exe</Image>
+      <Image condition="image">sc.exe</Image>
+      <Image condition="image">vncviewer.exe</Image>
+      <Image condition="image">java.exe</Image>
+      <DestinationPort>1723</DestinationPort>
+      <DestinationPort>8080</DestinationPort>
+      <DestinationPort>23</DestinationPort>
+      <DestinationPort>9001</DestinationPort>
+      <DestinationPort>22</DestinationPort>
+      <DestinationPort>5900</DestinationPort>
+      <DestinationPort>3128</DestinationPort>
+      <DestinationPort>3389</DestinationPort>
+      <DestinationPort>9030</DestinationPort>
+      <DestinationPort>25</DestinationPort>
+      <DestinationPort>4500</DestinationPort>
+      <DestinationPort>1080</DestinationPort>
+      <DestinationPort>5800</DestinationPort>
+    </NetworkConnect>
+    <ProcessTerminate onmatch="include">
+      <Image condition="begin with">C:\Users</Image>
+      <Image condition="begin with">C:\Temp</Image>
+      <Image condition="begin with">C:\Windws\Temp</Image>
+    </ProcessTerminate>
+    <DriverLoad onmatch="include" />
+    <ImageLoad onmatch="include">
+      <ImageLoaded>C:\Windows\System32\WinSCard.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\vaultcli.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\samlib.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\cryptdll.dll</ImageLoaded>
+      <ImageLoaded>C:\Windows\System32\hid.dll</ImageLoaded>
+    </ImageLoad>
+    <CreateRemoteThread onmatch="include">
+      <StartFunction condition="contains">LoadLibrary</StartFunction>
+    </CreateRemoteThread>
+  </EventFiltering>
+</Sysmon>
