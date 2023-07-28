@@ -36,7 +36,8 @@
       <Image condition="end with">vbs.exe</Image>
       <Image condition="end with">wscript.exe</Image>
       <Image condition="end with">cscript.exe</Image>
-      <Image condition="end with">powershell.exe.exe</Image>
+      <Image condition="end with">powershell.exe</Image>
+      <Image condition="end with">cmd.exe</Image>
       <CommandLine condition="contains">wevtutil cl</CommandLine>
       <CommandLine condition="contains">wevutil cl</CommandLine>
       <CommandLine condition="contains">/logfile= /LogToConsole=false /U</CommandLine>
@@ -50,6 +51,7 @@
       <ParentImage condition="end with">osk.exe</ParentImage>
       <ParentImage condition="end with">utilman.exe</ParentImage>
       <ParentImage condition="end with">Narrator.exe</ParentImage>
+      <ParentImage condition="end with">cmd.exe</ParentImage>
     </ProcessCreate>
     <NetworkConnect onmatch="include">
       <Image condition="image">omniinet.exe</Image>
