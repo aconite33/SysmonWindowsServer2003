@@ -98,6 +98,8 @@
       <DestinationPort>4500</DestinationPort>
       <DestinationPort>1080</DestinationPort>
       <DestinationPort>5800</DestinationPort>
+      <DestinationPort>443</DestinationPort>
+      <DestinationPort>80</DestinationPort>
     </NetworkConnect>
     <ProcessTerminate onmatch="include">
       <Image condition="begin with">C:\Users</Image>
